@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch data and render
     const fetchData = () => {
       // Try API with cors-anywhere proxy
-      fetch('https://cors-anywhere.herokuapp.com/https://function-web-api.azurewebsites.net/api/web_api')
+      fetch('https://function-web-api.azurewebsites.net/api/web_api')
         .then(response => {
           if (!response.ok) throw new Error('Failed to fetch data: ' + response.statusText);
           return response.json();
